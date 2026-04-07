@@ -19,4 +19,4 @@ Use CQRS when reads and writes have different concerns, models, or scaling needs
 Avoid CQRS in simple CRUD apps where splitting commands and queries adds ceremony without real payoff.
 
 ## Comparison with C#
-This sample plays the same role as the MediatR-based sample in the C# lab. Here the buses are implemented manually with Spring DI to keep the sample lightweight and educational.
+This sample plays the same role as the MediatR-based sample in the C# lab. Here the buses are implemented manually with Spring DI to keep the sample lightweight and educational, which also helps show what MediatR abstracts away under the hood.
