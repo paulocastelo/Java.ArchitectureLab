@@ -41,7 +41,7 @@ public class ProductsController {
 
     @PostMapping
     public ResponseEntity<ProductResponse> create(@RequestBody @Valid CreateProductRequest request) {
-        var result = commandBus.send(new CreateProductCommand(request.name(), request.sku(), request.unitPrice()));
+        ProductResponse result = commandBus.send(new CreateProductCommand(request.name(), request.sku(), request.unitPrice()));
         return ResponseEntity.status(HttpStatus.CREATED).body(result);
     }
 }

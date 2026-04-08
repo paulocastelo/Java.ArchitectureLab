@@ -2,7 +2,6 @@ package com.archlab.sample07.application;
 
 import com.archlab.sample07.application.contracts.CreateMovementRequest;
 import com.archlab.sample07.application.contracts.MovementResponse;
-import com.archlab.sample07.domain.MovementType;
 import com.archlab.sample07.domain.StockMovement;
 import org.springframework.stereotype.Service;
 
